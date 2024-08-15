@@ -59,13 +59,12 @@
 
          $People = array("Paul" => "14.03.1992", "Lisa" => "22.08.1942", "Tom" => "27.04.1994", "Linda" => "17.11.1976");
 
-         $peopleStr = implode(" ", $People);
 
-
-
+         $months = array("Januari", "Februari", "Mars", "April", "Maj", "Juni", "Juli", "Augusti", "September", "Oktober", "November", "December");
+         
          foreach ($People as $name => $age)
          {
-           echo $name . " är född i " . $age . '<br>';
+           echo $name . " är född i " . $months[str_replace('0', '', explode('.', $age)[1])-1] . "<br>";
          }
 
          $bigCity = array ("Helsingfors" => "601 035", "Åbo" => "179 529", "Vanda" => "204 545", "Esbo" => "255 121", "Tammerfors" => "216 586");
