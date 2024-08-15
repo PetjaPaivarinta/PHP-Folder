@@ -2,6 +2,7 @@
 <html>
     <head>
         <title>Övning 1</title>
+        <link>
     </head>
     <body>
         <?php 
@@ -21,8 +22,8 @@
         echo $pastries[0] [1] . "<br>";
         echo $pastries [2] [2] . "<br>";
         
-        echo count($pastries);
-        
+        echo count($pastries) . '<br>';
+
         $totalPastries = 0;
         for ($i = 0; $i < count($pastries); $i++) {
             $totalPastries += $pastries[$i][2];
