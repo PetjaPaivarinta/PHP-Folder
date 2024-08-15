@@ -21,6 +21,7 @@
         echo $pastries[0] [1] . "<br>";
         echo $pastries [2] [2] . "<br>";
         
+        echo count($pastries);
         
         $totalPastries = 0;
         for ($i = 0; $i < count($pastries); $i++) {
