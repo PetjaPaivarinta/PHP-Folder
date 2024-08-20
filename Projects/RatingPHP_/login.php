@@ -28,27 +28,36 @@
                     <option value="admin">Admin</option>
                     <option value="user">User</option>
                 </select>
-                    <input id="password" type="password" name="password" placeholder="Password" required>
+                    <input id="password" type="password" name="password" placeholder="Password">
                     <input id="login" type="submit" name="submit" value="Login">
             </form>
         </div>
 
         <?php
-            include 'db.php';
-            session_start();
-            if(isset($_POST['submit'])){
-                $userType = $_POST['userType'];
-                $password = $_POST['password'];
-                $query = "SELECT * FROM $userType WHERE password = '$password'";
-                $result = mysqli_query($conn, $query);
-                if(mysqli_num_rows($result) > 0){
-                    $_SESSION['userType'] = $userType;
-                    header("Location: home.php");
-                }else{
-                    echo "<script>alert('Invalid credentials')</script>";
-                }
-            }
-            
+           ob_start();
+           include 'db.php';
+           session_start();
+           if (isset($_POST['submit'])) {
+               $userType = $_POST['userType'];
+               $password = $_POST['password'];
+               $hashedPassword = sha1($password);
+
+           
+               if ($userType == 'user') {
+                   echo "Redirecting to user.php";
+                   header("Location: user.php");
+                   exit();
+               } else {
+                   $query = "SELECT * FROM users WHERE password = '$hashedPassword'";
+                   $result = mysqli_query($conn, $query);
+                   if (mysqli_num_rows($result) > 0) {
+                       $_SESSION['userType'] = $userType;
+                       header("Location: admin.php");
+                   } else {
+                       echo "<script>alert('Invalid credentials')</script>";
+                   }
+               }
+           }
         ?>
 
     <script src="../RatingPHP_/Assets/JS/showLogin.js"></script>

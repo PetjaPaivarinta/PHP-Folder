@@ -266,3 +266,23 @@ input[type=submit]:hover {
 #login {
     display: none;
 }
+.emojis {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 10vh;
+    align-items: flex-start;
+    width: 100%;
+}
+.emoji {
+    position: relative;
+    height: 256px;
+    width: 256px;
+}
+.emoji img {
+    position: absolute; /* Stack images on top of each other */
+    top: 0;
+    left: 0;
+    height: 256px;
+    width: 256px;
+}
