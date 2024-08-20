@@ -19,6 +19,9 @@
          <div id="frontImg">
         <img src="../RatingPHP_/Assets/Images/clerk.jpg" alt="the store clerk" id="stockmarketImage">
         <p>rate this man</p>
+        <div class="countdown">
+            <p id="countdown" >You will be automatically redirected in:</p>
+        </div>
     </div>
         <div id="titleandexplainBox">
             <div id="titleBox">
@@ -29,9 +32,9 @@
             <div id="explainBox">
                 <p id="explainer">
                     This is a site where you can rate a man and provide feedback. <br>
-                    You can rate various aspects of the man's appearance, behavior, and personality. <br>
+                   We at [Insert Company Here], value our customers greatly and want to hear Your feedback!. <br>
                     Feel free to leave detailed comments and suggestions for improvement. <br>
-                    Your ratings and feedback will help the man understand how he is perceived by others and make necessary changes. <br>
+                    Your ratings and feedback will help the man understand how he is perceived by others and make necessary changes.<br>
                     Remember to be respectful and constructive in your ratings and comments. <br>
                     Thank you for participating in our rating system!<br>   
                 </p>
@@ -65,5 +68,7 @@
             <p>&copy; 2024 Stock-Finder</p>
         </footer>
         <script src="" async defer></script>
-        <script src="../RatingPHP_/Assets/main.js"></script>
+        <script src="../RatingPHP_/Assets/JS/main.js"></script>
+        <script src="../RatingPHP_/Assets/JS/checkDark.js"></script>
+
     </body>
