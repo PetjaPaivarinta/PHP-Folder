@@ -65,7 +65,7 @@
         
         
         <footer>
-            <p>&copy; 2024 Stock-Finder</p>
+            <p>&copy; 2024 Rate-A-Man</p>
         </footer>
         <script src="" async defer></script>
         <script src="../RatingPHP_/Assets/JS/main.js"></script>

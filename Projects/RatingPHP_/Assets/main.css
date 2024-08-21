@@ -50,8 +50,8 @@
 #frontImg {
     position: absolute;
     right: 0; 
-    top: 14vh;
-    width: 40%;
+    top: 18vh;
+    margin-right: 3vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -59,7 +59,6 @@
 }
 
 #stockmarketImage {
-    width: 70vh;
     height: auto; 
     transition: .4s;
 }
@@ -111,6 +110,7 @@
    justify-content: center;
   align-items: flex-start;
   margin-left: 10vh;
+  margin-bottom: 20vh;
 }
 .faqtitleBox {
     background-color: #0a62e6;
@@ -169,7 +169,7 @@
 
 footer:not(.dark-mode) {
     background-color: #ffffff;
-    opacity: 100%;
+    opacity: 50%;
     font-size: 30px;
     font-weight: bold;
     text-align: center;
@@ -182,7 +182,7 @@ footer:not(.dark-mode) {
 }
 footer.dark-mode {
     background-color: #000000;
-    opacity: 100%;
+    opacity: 50%;
     font-size: 30px;
     font-weight: bold;
     text-align: center;
@@ -193,12 +193,12 @@ footer.dark-mode {
     z-index: 100;
     margin: 0;
 }
-#loginH1 {
+.loginH1 {
     font-family: 'Vogue font';
     font-size: 100px;
     color: #ffffff;
 }
-#loginBox {
+.loginBox {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -269,20 +269,84 @@ input[type=submit]:hover {
 .emojis {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: center;
     margin-top: 10vh;
+    gap: 50px;
     align-items: flex-start;
     width: 100%;
 }
 .emoji {
     position: relative;
-    height: 256px;
-    width: 256px;
+    height: 26.55vh;
+    width: 26.55vh;
 }
 .emoji img {
-    position: absolute; /* Stack images on top of each other */
+    position: absolute;
     top: 0;
     left: 0;
-    height: 256px;
-    width: 256px;
+    height: 26.55vh;
+    width: 26.55vh;
+    transition: .4s;
+    cursor: pointer;
+}
+.emoji img:hover {
+    height: 28vh;
+    width: 28vh;
+    transition: .4s;
+}
+.genderSel {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3vh;
+    gap: 30px;
+    font-size: 30px; 
+}
+
+.genderSel.dark-mode h2:hover {
+    font-family: 'Dream font';
+    cursor: pointer;
+    color: #1b1b1b;
+}
+.genderSel:not(dark-mode) h2:hover {
+    font-family: 'Dream font';
+    cursor: pointer;
+    color: #9c4848;
+}
+#submit {
+    width: 30%;
+    background-color: #4f51d4;
+    margin-left: 34%;
+    margin-top: 5vh;
+    margin-bottom: 6vh;
+    margin-right: auto;
+}
+#submit:hover {
+    background-color: #3f41b4;
+}
+#filedata {
+    text-align: center;
+}
+
+.logout {
+    position: absolute;
+    margin-top: 2vh;
+    text-decoration: none;
+    color: inherit;
+    left: 0;
+   font-size: 30px;
+   top: 2vh;
+   margin-left: 2vh;
+}
+
+.logout:hover {
+    color: #5e3e3e;
+}
+
+#rate {
+    font-size: 50px;
+}
+#rateBox {
+    margin-top: 1vh;
 }

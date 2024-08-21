@@ -17,10 +17,13 @@
         </label>
 
 
-    <div id="loginBox">
-        <h1 id="loginH1">Login</h1>
-
+    <div id="rateBox" class="loginBox">
+        <h1 id="rate" class="loginH1">Login</h1>
     </div>
+
+    <a href="login.php" class="logout">Logout</a>
+
+    
         <div id="formBox">
             <form name="f1" method="POST">
                 <select id="mySelect" name="userType" required>
