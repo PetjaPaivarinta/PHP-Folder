@@ -1,6 +1,0 @@
-
-Face: Sad face, Gender: Male, Time: 2024-08-21 12:55:13,
-Face: Angry face, Gender: Female, Time: 2024-08-21 12:55:15,
-Face: Cool face, Gender: Female, Time: 2024-08-21 12:55:17,
-Face: Sad face, Gender: Male, Time: 2024-08-21 12:55:18,
-Face: Cool face, Gender: Female, Time: 2024-08-21 12:55:20,
